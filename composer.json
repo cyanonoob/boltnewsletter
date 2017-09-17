@@ -1,0 +1,39 @@
+{
+    "name": "cyanonoob/newsletter",
+    "description": "Newsletter for Bolt (Jazz in Zwolle-specific)",
+    "type": "bolt-extension",
+    "keywords": [
+    ],
+    "require": {
+        "bolt/bolt": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Geert van Dijk",
+            "email": "no@email.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Extension\\Cyanonoob\\Newsletter\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bolt\\Extension\\Cyanonoob\\Newsletter\\Tests\\": 
+"tests",
+            "Bolt\\Tests\\": "vendor/bolt/bolt/tests/phpunit/unit/"
+        }
+    },
+    "extra": {
+        "bolt-assets": "web",
+        "bolt-class": 
+"Bolt\\Extension\\Cyanonoob\\Newsletter\\NewsletterExtension"
+    }
+}
